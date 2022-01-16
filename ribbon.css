@@ -1,4 +1,4 @@
-.ribbon {
+.ribbon{
     /* width: 150px;
     height: 150px; */
     overflow: hidden;
@@ -12,9 +12,14 @@
     display: block;
     border: 5px solid #2980b9;
   }
+
+  .ribbon:hover > span{
+    display: block;
+  }
+  
   .ribbon span {
     position: absolute;
-    display: block;
+    display: none;
     width: 100%;
     padding: 1rem 3rem;
     background-color: rgba(107, 20, 20, 0.2);
