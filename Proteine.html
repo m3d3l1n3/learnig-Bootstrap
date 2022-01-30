@@ -10,12 +10,23 @@
 			height: 20rem;
 			width: auto;
 		}
+
+		body {
+			color: var(--bs-body-bg);
+			background-color: black;
+		}
+		.table{
+			color: var(--bs-body-bg);
+		}
 	</style>
 </head>
 
 <body>
 	<header> </header>
 	<main>
+		<div class="fixed-top start-50">
+		<button class="btn-outline-dark" onclick="ChangingColors()">Schimbare fundal</button>
+		</div>
 		<div id="Carousel1" class="carousel slide " data-bs-ride="carousel" data-bs-interval="700">
 			<!-- <div class="carousel-indicators">
 			</div> -->
@@ -428,6 +439,20 @@
 						<li>Masa moleculară a diferitelor proteine:
 						</li>
 					</ul>
+					<table class="table">
+						<tr>
+							<th>Denumirea proteinei</th>
+							<th>Sursa proteinei</th>
+							<th>Masa moleculară</th>
+						</tr>
+						<tr>
+							<td>Lactalbumina</td>
+							<td>
+								Lapte
+							</td>
+							<td></td>
+						</tr>
+					</table>
 				</div>
 				<div class="row">
 					<div class="col-6">
@@ -445,6 +470,7 @@
 	</main>
 </body>
 <script src="JavaScriptsByMe.js"></script>
+<!-- <script type="text/javascript">setInterval(ChangingBackground, 1000);</script> -->
 <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
