@@ -16,6 +16,7 @@ function ChangingColors() {
     timer = setInterval(ChangingBackground, 1000);
     if (colors.length <= tom) tom = 0;
 }
+
 // schimba intrele ele culorile dintr-o schema 
 function ChangingBackground() {
     document.body.style.backgroundColor = colors[tom][jerry];
@@ -30,3 +31,24 @@ function ChangingBackground() {
     jerry++;
     if (colors[tom].length <= jerry) jerry = 0;
 }
+
+// functie ce se autoapeleaza - de aceea sunt parantezele;
+(function Initialization(){
+    let elem = document.getElementsByClassName("parts");
+    for(let element of elem){
+        element.style.opacity = 0;
+    }
+})();
+
+// functia creeaza efectul vizual prin cresterea opacitatii obiectelor
+let opacity = 0;
+function AnimationPart(){
+    opacity+=0.01;
+    let part = document.getElementsByClassName("parts");
+    for(let element of part){
+        element.style.opacity = opacity;
+    }
+    // part.style.opacity = part.style.opacity == 0?100:0; if intr-o sg linie
+    
+}
+window.addEventListener('scroll', AnimationPart);

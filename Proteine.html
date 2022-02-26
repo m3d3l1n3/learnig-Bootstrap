@@ -15,7 +15,8 @@
 			color: var(--bs-body-bg);
 			background-color: black;
 		}
-		.table{
+
+		.table {
 			color: var(--bs-body-bg);
 		}
 	</style>
@@ -25,7 +26,7 @@
 	<header> </header>
 	<main>
 		<div class="fixed-top start-50">
-		<button class="btn-outline-dark" onclick="ChangingColors()">Schimbare fundal</button>
+			<button class="btn-outline-dark" onclick="ChangingColors()">Schimbare fundal</button>
 		</div>
 		<div id="Carousel1" class="carousel slide " data-bs-ride="carousel" data-bs-interval="700">
 			<!-- <div class="carousel-indicators">
@@ -51,7 +52,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Introducere</h5>
 					<p class="card-text">Cuprinde: origine, forma chimica</p>
-					<a href="#Introducere" class="btn btn-primary"> Vezi </a>
+					<a href="#Introducere" class="btn btn-primary" onclick="AnimationPart()"> Vezi </a>
 				</div>
 			</div>
 			<div class="card col-lg-3">
@@ -79,78 +80,84 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<pre><h4 id="Introducere">Introducere</h4></pre>
-			<pre><h6> Aspecte generale </h6></pre>
-			<div class="col-md-7">
-				<ul>
-					<li>Origine: proteios(greaca veche) = primitiv/principal;
-					</li>
-					<li>Proteinele = compuși macromoleculari naturali obținuți prin policondensarea alfa-aminoacizilor;
-					</li>
-					<li>
-						Aminoacizii = compuși organici cu funcțiuni mixte, conținând grupările carboxil (-COOH) & grupa
-						amino (-NH2) +un radical hidrocarbonat;
-					</li>
-					<li>
-						Unitățile de aminoacid sunt unite prin legături peptidice(-CO-NH-);
-					</li>
-					<li>La formarea proteinelor naturale participă 22 de alfa-aminoacizi;
-					</li>
-					<li>Numărul mare de aminoacizi + posibilitățile multiple în care se pot înlănțui => mare diversitate
-						de proteine;
-					</li>
-					<li>Proteinele sunt tipice unei specii vegetale/animale, fiind specifice fiecărui individ(pot difera
-						de la individ la individ, în funcție de ADN-ul fiecăruia);
-					</li>
-					<li>Pentru descrierea acestora sunt importante:
-						<ul>
-							<li>identitatea aminoacizilor componenți;
-							</li>
-							<li> secvența acestora(ordinea în care se succed);
-							</li>
-							<li>orientarea în spațiu a macromoleculelor;</li>
-							<li>interacțiunile care stabilizează macromoleculele;
-							</li>
-						</ul>
-					</li>
-					<li>Interacțiunile pot fi reprezentate de:
-						<ul>
-							<li>legături de hidrogen</li>
-							<li>legături ionice</li>
-							<li>legături covalente</li>
-						</ul>
-					</li>
-				</ul>
-				<pre><h6> Rolul in organismul uman </h6></pre>
-				<ul>
-					<li> Plastic;</li>
-					<li> Funcțional (de ex. participă la echilibrul acido-bazic, la constituirea enzimelor, hormonilor;
-						constituie receptori membranari);
-					</li>
-					<li>Apărare (de ex. ajută la refacerea țesuturilor lovite, anticorpi; crește rezistența față de
-						acțiunea nocivă a unor substanțe toxice: Pb, Hg, Cd, Cr, Se, As, benzen, toluen, nitrobenzen,
-						cloroform, pesticide organoclorurat ș.a.);
-					</li>
-					<li>Energetic(ardere - produc 4,1 Kcal/g proteine);
-					</li>
-				</ul>
-			</div>
-			<div class="col-md-5">
-				<div class="position-relative" style="width: 10rem; height: 20rem;">
-					<div class="ribbon-top-left ribbon"><span>alfa-aminoacid</span>
-						<img src="images/alfa-aminoacizi.png" class="d-inline" style="height: 17rem;"
-							title="Alfa-aminoacid">
+		<div class="row parts"  onscroll="AnimationPart()">
+				<pre><h4 id="Introducere">Introducere</h4></pre>
+				<pre><h6> Aspecte generale </h6></pre>
+				<div class="col-md-7 parts">
+					<ul>
+						<li>Origine: proteios(greaca veche) = primitiv/principal;
+						</li>
+						<li>Proteinele = compuși macromoleculari naturali obținuți prin policondensarea
+							alfa-aminoacizilor;
+						</li>
+						<li>
+							Aminoacizii = compuși organici cu funcțiuni mixte, conținând grupările carboxil (-COOH) &
+							grupa
+							amino (-NH2) +un radical hidrocarbonat;
+						</li>
+						<li>
+							Unitățile de aminoacid sunt unite prin legături peptidice(-CO-NH-);
+						</li>
+						<li>La formarea proteinelor naturale participă 22 de alfa-aminoacizi;
+						</li>
+						<li>Numărul mare de aminoacizi + posibilitățile multiple în care se pot înlănțui => mare
+							diversitate
+							de proteine;
+						</li>
+						<li>Proteinele sunt tipice unei specii vegetale/animale, fiind specifice fiecărui individ(pot
+							difera
+							de la individ la individ, în funcție de ADN-ul fiecăruia);
+						</li>
+						<li>Pentru descrierea acestora sunt importante:
+							<ul>
+								<li>identitatea aminoacizilor componenți;
+								</li>
+								<li> secvența acestora(ordinea în care se succed);
+								</li>
+								<li>orientarea în spațiu a macromoleculelor;</li>
+								<li>interacțiunile care stabilizează macromoleculele;
+								</li>
+							</ul>
+						</li>
+						<li>Interacțiunile pot fi reprezentate de:
+							<ul>
+								<li>legături de hidrogen</li>
+								<li>legături ionice</li>
+								<li>legături covalente</li>
+							</ul>
+						</li>
+					</ul>
+					<pre><h6> Rolul in organismul uman </h6></pre>
+					<ul>
+						<li> Plastic;</li>
+						<li> Funcțional (de ex. participă la echilibrul acido-bazic, la constituirea enzimelor,
+							hormonilor;
+							constituie receptori membranari);
+						</li>
+						<li>Apărare (de ex. ajută la refacerea țesuturilor lovite, anticorpi; crește rezistența față de
+							acțiunea nocivă a unor substanțe toxice: Pb, Hg, Cd, Cr, Se, As, benzen, toluen,
+							nitrobenzen,
+							cloroform, pesticide organoclorurat ș.a.);
+						</li>
+						<li>Energetic(ardere - produc 4,1 Kcal/g proteine);
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<div class="position-relative" style="width: 10rem; height: 20rem;">
+						<div class="ribbon-top-left ribbon"><span>alfa-aminoacid</span>
+							<img src="images/alfa-aminoacizi.png" class="d-inline" style="height: 17rem;"
+								title="Alfa-aminoacid">
+						</div>
+					</div>
+					<div class="position-relative">
+						<div class="ribbon ribbon-top-left"><span>formarea proteinelor</span>
+							<img src="images/react1.png" class="d-inline" style="height: 18rem;"
+								title="Formarea proteinelor">
+						</div>
 					</div>
 				</div>
-				<div class="position-relative">
-					<div class="ribbon ribbon-top-left"><span>formarea proteinelor</span>
-						<img src="images/react1.png" class="d-inline" style="height: 18rem;"
-							title="Formarea proteinelor">
-					</div>
-				</div>
-			</div>
-			<div class="row">
+			<div class="row parts">
 				<pre><h4 id="Clasificare"> Clasificare </h4></pre>
 				<div class="col-md-7">
 					<ul>
@@ -272,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row parts">
 				<div class="col-md-7">
 					<ul>
 						<li>Proteinele se mai pot clasifica dupa functia biologica, precum in tabelul de mai jos.</li>
@@ -390,7 +397,7 @@
 
 				</div>
 			</div>
-			<div class="row">
+			<div class="row parts">
 				<pre><h4 id="Proprietati"> Proprietăți </h4></pre>
 				<div calss="col-md-7">
 					<ul>
@@ -467,6 +474,7 @@
 				</div>
 				<button class="btn-success" onclick="ScrolTop()">Fin</button>
 			</div>
+		</div>
 	</main>
 </body>
 <script src="JavaScriptsByMe.js"></script>
